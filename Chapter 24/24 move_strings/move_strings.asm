@@ -85,9 +85,9 @@ str_loop3:	mov byte[rdi], al		; the simple method
 		mov rdi,other_string
 		mov rcx, length
     		rep stosb			
-		lea rsi,[my_string+length-4]
-		lea rdi,[other_string+length]
-		mov rcx, 27			;copy only ten characters
+		lea rsi,[my_string+length-5]
+		lea rdi,[other_string+length-1]
+		mov rcx, 26			;copy only ten characters
 		std					;std sets DF, cld clears DF
 		rep movsb
 		prnt other_string,length
