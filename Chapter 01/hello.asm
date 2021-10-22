@@ -6,7 +6,7 @@ section .text
     global main					
 main:
 						 
-	mov     rax, 1		; 1 = write	
+    mov     rax, 1		; 1 = write	
     mov     rdi, 1		; 1 = to stdout		
     mov     rsi, msg	; string to display in rsi
     mov     rdx, 12		; length of the string, without 0
